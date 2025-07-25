@@ -29,7 +29,7 @@ resource "aws_route_table" "name" {
     }  
 }
 #subnet association
-resouce "aws_route_table_association" "name" {
+resource "aws_route_table_association" "name" {
     subnet_id    = aws_subnet.name.id
     route_table_id = aws_route_table.name.id
 }
